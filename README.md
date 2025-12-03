@@ -1,17 +1,104 @@
-# React + Vite
+# 🏆 Champions League Hub  
+### SPA em React com Rotas, Componentização, Responsividade e CSS Modules
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi desenvolvido para fins acadêmicos como parte da avaliação prática da disciplina de Desenvolvimento Web.  
+O sistema apresenta informações sobre clubes, partidas e uma página de contato — tudo no formato de **SPA (Single Page Application)** com **React + Vite**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📁 Estrutura do Projeto
 
-## React Compiler
+src/
+│ App.jsx
+│ main.jsx
+│ index.css
+├─ components/
+│ ├─ Layout/
+│ ├─ Navbar/
+│ ├─ Footer/
+│ └─ PageHeader/
+└─ pages/
+├─ Home/
+├─ Teams/
+├─ Matches/
+└─ Contact/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+- **components/** → componentes reutilizáveis como Navbar, Footer, Layout e PageHeader  
+- **pages/** → páginas da aplicação controladas por rotas  
+- **index.css** → estilos globais e variáveis  
+- **App.jsx** → configurações de rotas  
+- **main.jsx** → inicialização do React + Router
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Champions-league-hub
+---
+
+## 🚀 Tecnologias Utilizadas
+
+| Tecnologia | Uso |
+|-----------|-----|
+| **React** | Estrutura da aplicação |
+| **React Router DOM** | Sistema de rotas SPA |
+| **Vite** | Build + Dev Server rápido |
+| **JavaScript (ES6)** | Lógica e componentes |
+| **CSS Modules** | Estilização isolada por componente |
+| **HTML via JSX** | Estrutura da interface |
+
+---
+
+## 🗂️ Funcionalidades
+
+✔ 4 páginas funcionais  
+✔ Rotas dinâmicas sem reload (SPA)  
+✔ Props utilizadas para renderização dinâmica  
+✔ Navbar fixa no topo  
+✔ Footer fixo ao final  
+✔ Sistema totalmente responsivo  
+✔ CSS organizado por componentes  
+✔ Estilo moderno usando variáveis, gradientes e sombras suaves  
+✔ Cards, tabelas e formulários estilizados  
+
+---
+
+## 📄 Páginas da Aplicação
+
+### 🏠 Home  
+Resumo do sistema, hero section moderna e dados gerais da Champions League.
+
+### ⚽ Times  
+Cards de clubes históricos com país e número de títulos.
+
+### 📅 Partidas  
+Tabela estilizada com confrontos marcantes.
+
+### ✉️ Contato  
+Formulário funcional com layout mais profissional.
+
+---
+
+## 📌 Requisitos da Prova — Atendidos ✔
+
+| Requisito | Onde Está |
+|----------|-----------|
+| **Uso de Props** | `PageHeader.jsx` |
+| **Componentização** | `components/*` |
+| **SPA + Rotas** | `App.jsx` + `react-router-dom` |
+| **HTML/CSS/JS** | Estrutura JSX + CSS Modules |
+| **4 Páginas (Home obrigatória)** | Home, Teams, Matches, Contact |
+| **Navbar e Footer fixos** | `Layout.jsx` |
+| **Responsivo** | Toda estilização com CSS Modules |
+| **Organização de pastas** | Estrutura modular no `src/` |
+| **CSS Modules** | Todos arquivos `.module.css` |
+
+---
+
+## 🔧 Como Rodar o Projeto
+
+### 1. Instale as dependências
+
+```bash
+npm install
+npm run dev
+
+## ✨ Autor
+
+Projeto desenvolvido por Felipe Alho, para fins acadêmicos.
